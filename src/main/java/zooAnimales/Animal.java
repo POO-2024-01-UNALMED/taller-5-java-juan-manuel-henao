@@ -78,8 +78,13 @@ import gestion.*;
     	return "desplazarse";
     }
     
-    public void totalPorTipo(Mamifero mamifero, Ave ave, Reptil reptil, Pez pez, Anfibio anfibio) {
-    	return String.format("Mamíferos: %d\nAves: %d\nReptiles: %d\nPeces: %d\nAnfibios: %d", mamifero.cantidadMamiferos(), ave.cantidadAves(), reptil.cantidadReptiles(), pez.cantidadPeces(), anfibio.cantidadAnfibios());
+    public String totalPorTipo(Mamifero mamifero, Ave ave, Reptil reptil, Pez pez, Anfibio anfibio) {
+    	int m= mamifero.cantidadMamiferos();
+    	int a=ave.cantidadAves();
+    	int r=reptil.cantidadReptiles();
+    	int p=pez.cantidadPeces();
+    	int an=anfibio.cantidadAnfibios();
+    	return String.format("Mamíferos: %d\nAves: %d\nReptiles: %d\nPeces: %d\nAnfibios: %d",m,a,r,p,an);
     }
     
     public String toString() {
