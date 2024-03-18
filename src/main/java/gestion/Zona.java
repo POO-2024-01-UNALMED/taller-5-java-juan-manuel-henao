@@ -8,17 +8,17 @@ public class Zona {
 	private ArrayList<Animal> animales;
 	
 	
-public Zona(String nombre, Zoologico zoo, ArrayList<Animal> animales) {
+public Zona(String nombre, Zoologico zoo) {
 	        this.nombre = nombre;
 	        this.zoo = zoo;
-	        this.animales = animales;
+	       
 	    }
 	    
 	    
 public Zona() {
 	        this.nombre = "";
 	        this.zoo = null;
-	        this.animales = new ArrayList<Animal>();
+	        
 	    }
 
 

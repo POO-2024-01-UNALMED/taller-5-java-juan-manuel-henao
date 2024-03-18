@@ -10,9 +10,9 @@ public class Pez extends Animal {
 	private String colorEscamas;
 	private int cantidadAletas;
 	
-	public Pez(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona,
+	public Pez(String nombre, int edad, String habitat, String genero,
 			String colorEscamas, int cantidadAletas) {
-     super(nombre, edad, habitat, genero, zona);
+     super(nombre, edad, habitat, genero);
      this.colorEscamas = colorEscamas;
      this.cantidadAletas = cantidadAletas;
      Pez.listado.add(this);
@@ -47,14 +47,14 @@ public class Pez extends Animal {
     	return "nadar";
     }
     
-    public void crearSalmon(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-    	new Pez(nombre,edad,"oceano",genero,zona,
+    public void crearSalmon(String nombre, int edad, String genero) {
+    	new Pez(nombre,edad,"oceano",genero,
 			"rojo",6);
     	salmones ++;
     }
     
-    public void crearBacalao(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-    	new Pez(nombre,edad,"oceano",genero,zona,
+    public void crearBacalao(String nombre, int edad, String genero) {
+    	new Pez(nombre,edad,"oceano",genero,
 			"gris",6);
     	bacalaos ++;
     }

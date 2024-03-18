@@ -9,9 +9,9 @@ public class Ave extends Animal{
 	public int aguilas;
 	private String colorPlumas;
 	
-	public Ave(String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona,
+	public Ave(String nombre, int edad, String habitat, String genero,
             String colorPlumas) {
-     super(nombre, edad, habitat, genero, zona);
+     super(nombre, edad, habitat, genero);
      this.colorPlumas = colorPlumas;
      Ave.listado.add(this);
  }
@@ -37,15 +37,15 @@ public class Ave extends Animal{
 		
 	}
 	
-	public void crearHalcon(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		new Ave(nombre, edad,"montanas",genero,zona,
+	public void crearHalcon(String nombre, int edad, String genero) {
+		new Ave(nombre, edad,"montanas",genero,
             "cafe glorioso");
 		halcones++;
 		
 	}
 	
-	public void crearAguila(String nombre, int edad, String genero, ArrayList<Zona> zona) {
-		new Ave(nombre,edad,"montanas",genero,zona,
+	public void crearAguila(String nombre, int edad, String genero) {
+		new Ave(nombre,edad,"montanas",genero,
             "blanco y amarillo");
 		aguilas++;
 	}
