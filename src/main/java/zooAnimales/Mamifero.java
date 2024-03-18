@@ -36,7 +36,7 @@ Mamifero.listado.add(this);
         Mamifero.listado = listado;
     }
 	
-    public boolean getPelaje() {
+    public boolean isPelaje() {
         return pelaje;
     }
 
