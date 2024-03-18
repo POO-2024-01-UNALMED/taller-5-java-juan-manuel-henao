@@ -14,8 +14,7 @@ public Zoologico(String nombre, String ubicacion) {
     
     
 public Zoologico() {
-        this.nombre = "";
-        this.ubicacion = "";
+        
     }
 
 

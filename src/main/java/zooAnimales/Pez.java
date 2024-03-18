@@ -18,9 +18,7 @@ public class Pez extends Animal {
      Pez.listado.add(this);
  }
 	public Pez() {
-     super();
-     this.colorEscamas = "";
-     this.cantidadAletas = 0;
+     
      Pez.listado.add(this);
      }
 	

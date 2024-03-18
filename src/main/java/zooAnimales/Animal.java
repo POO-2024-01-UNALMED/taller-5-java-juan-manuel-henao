@@ -17,10 +17,7 @@ import gestion.*;
         totalAnimales++;
     }
 	public Animal() {
-        this.nombre = "";
-        this.edad = 0;
-        this.habitat = "";
-        this.genero = "";
+        
         totalAnimales++;
     }
 

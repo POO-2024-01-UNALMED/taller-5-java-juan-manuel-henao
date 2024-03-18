@@ -20,9 +20,7 @@ this.patas = patas;
 Mamifero.listado.add(this);
 	}
 	public Mamifero() {
-		super();
-	    this.pelaje =false;
-	    this.patas=0;
+		
 		Mamifero.listado.add(this);
 	}
 	

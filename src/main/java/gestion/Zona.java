@@ -16,8 +16,7 @@ public Zona(String nombre, Zoologico zoo) {
 	    
 	    
 public Zona() {
-	        this.nombre = "";
-	        this.zoo = null;
+	        
 	        
 	    }
 
