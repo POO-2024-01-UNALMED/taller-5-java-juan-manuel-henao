@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Mamifero extends Animal {
-	private static ArrayList<Mamifero> listado;
+	private static ArrayList<Mamifero> listado= new ArrayList<>();
 	public static int caballos;
 	public static int leones;
 	private boolean pelaje;
@@ -53,21 +53,23 @@ Mamifero.listado.add(this);
     }
     
     
-    public int cantidadMamiferos() {
+    public static int cantidadMamiferos() {
 	return Mamifero.listado.size();
 }
 
     
-    public void crearCaballo(String nombre,int edad, String genero) {
-	new Mamifero(nombre,edad,"pradera",genero,true,4);
-	caballos++;
+    public static Mamifero crearCaballo(String nombre,int edad, String genero) {
+    	caballos++;
+    	return new Mamifero(nombre,edad,"pradera",genero,true,4);
+	
 }
 
 
     
-    public void crearLeon(String nombre,int edad, String genero) {
-	new Mamifero(nombre,edad,"selva",genero,true,4);
-	leones++;
+    public static Mamifero crearLeon(String nombre,int edad, String genero) {
+    	leones++;
+    	return new Mamifero(nombre,edad,"selva",genero,true,4);
+	
 	
 }
 

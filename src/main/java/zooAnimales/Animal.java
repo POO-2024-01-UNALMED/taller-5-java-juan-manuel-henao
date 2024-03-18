@@ -7,7 +7,7 @@ import gestion.*;
 	private int edad;
 	private String habitat;
 	private String genero;
-	private ArrayList<Zona> zona;
+	private ArrayList<Zona> zona= new ArrayList<>();
 
 	public Animal(String nombre, int edad, String habitat, String genero) {
         this.nombre = nombre;
@@ -76,12 +76,12 @@ import gestion.*;
     	return "desplazarse";
     }
     
-    public String totalPorTipo(Mamifero mamifero, Ave ave, Reptil reptil, Pez pez, Anfibio anfibio) {
-    	int m= mamifero.cantidadMamiferos();
-    	int a=ave.cantidadAves();
-    	int r=reptil.cantidadReptiles();
-    	int p=pez.cantidadPeces();
-    	int an=anfibio.cantidadAnfibios();
+    public static String totalPorTipo() {
+    	int m= Mamifero.cantidadMamiferos();
+    	int a=Ave.cantidadAves();
+    	int r=Reptil.cantidadReptiles();
+    	int p=Pez.cantidadPeces();
+    	int an=Anfibio.cantidadAnfibios();
     	return String.format("Mamiferos: %d\nAves: %d\nReptiles: %d\nPeces: %d\nAnfibios: %d",m,a,r,p,an);
     }
     

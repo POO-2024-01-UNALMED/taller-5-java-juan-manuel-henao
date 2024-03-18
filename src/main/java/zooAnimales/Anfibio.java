@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Anfibio extends Animal {
-	private static ArrayList<Anfibio> listado;
-	public int ranas;
-	public int salamandras;
+	private static ArrayList<Anfibio> listado= new ArrayList<>();
+	public static int ranas;
+	public static int salamandras;
 	private String colorPiel;
 	private boolean venenoso;
 	
@@ -38,7 +38,7 @@ public class Anfibio extends Animal {
         return venenoso;
     }
     
-    public int cantidadAnfibios() {
+    public static int cantidadAnfibios() {
     	return Anfibio.listado.size(); 
     }
     
@@ -47,17 +47,19 @@ public class Anfibio extends Animal {
     }
     
     
-    public void crearRana(String nombre, int edad, String genero) {
-    	new Anfibio(nombre,edad,"selva",genero,
+    public static Anfibio crearRana(String nombre, int edad, String genero) {
+    	Anfibio.ranas++;
+    	return new Anfibio(nombre,edad,"selva",genero,
     			"rojo",true);
-    	ranas++;
+    	
     	
     }
     
-    public void crearSalamandra(String nombre, int edad, String genero) {
-    	new Anfibio(nombre,edad,"selva",genero,
+    public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
+    	Anfibio.salamandras++;
+    	return new Anfibio(nombre,edad,"selva",genero,
     			"negro y amarillo",false);
-    	salamandras++;
+    	
     	
     }
     

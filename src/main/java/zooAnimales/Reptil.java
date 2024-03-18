@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import gestion.Zona;
 
 public class Reptil extends Animal {
-	private static ArrayList<Reptil> listado;
-	public int iguanas;
-	public int serpientes;
+	private static ArrayList<Reptil> listado= new ArrayList<>();
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	
@@ -41,7 +41,7 @@ public class Reptil extends Animal {
 		return largoCola;
 	}
 	
-	public int cantidadReptiles() {
+	public static int cantidadReptiles() {
 		return Reptil.listado.size();
 		}
 	
@@ -49,16 +49,18 @@ public class Reptil extends Animal {
 		return "reptar";
 	}
 	
-	public void crearIguana(String nombre, int edad, String genero) {
-		new Reptil(nombre,edad,"humedal",genero,
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
+		Reptil.iguanas++;
+		return new Reptil(nombre,edad,"humedal",genero,
             "verde",3);
-		iguanas++;
+		
 	}
 	
-	public void crearSerpiente(String nombre, int edad, String genero) {
-		new Reptil(nombre,edad,"jungla",genero,
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
+		Reptil.serpientes++;
+		return new Reptil(nombre,edad,"jungla",genero,
 	            "blanco",1);
-			serpientes++;
+			
 		
 	}
 	
